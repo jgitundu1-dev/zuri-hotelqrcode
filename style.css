@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #102820, #1c3b2f);
+    color: #ffffff;
+    padding: 20px;
+}
+
+.qr-card {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    color: #1c2b24;
+    border-radius: 25px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.hotel-logo {
+    color: #b89146;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+#qrcode {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    background: white;
+    border: 5px solid #b89146;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#qrcode img {
+    max-width: 100%;
+    height: auto;
+}
+
+.scan-text {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+button {
+    border: none;
+    background: #b89146;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #967337;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .qr-card {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #qrcode {
+        width: 200px;
+        height: 200px;
+    }
+}
